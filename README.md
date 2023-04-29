@@ -2,17 +2,26 @@
 
 # Application of deep and machine learning techniques for multi-label classification performance on psychotic disorder diseases
 
-This repository is the official implementation of [Application of deep and machine learning techniques for multi-label classification performance on psychotic disorder diseases]([https://arxiv.org/abs/2030.12345](https://www.sciencedirect.com/science/article/pii/S2352914821000356#cebib0010)). 
+This repository is the official implementation of [Application of deep and machine learning techniques for multi-label classification performance on psychotic disorder diseases](https://www.sciencedirect.com/science/article/pii/S2352914821000356#cebib0010). 
 
 ## Requirements
 
-To install requirements:
+To get the dataset:
+>📋  Go to the [paper](https://www.sciencedirect.com/science/article/pii/S2352914821000356#cebib0010) and download csv file from Appendix A.
 
+To mount the dataset to Google Colab:
 ```setup
-pip install -r requirements.txt
+drive.mount('/content/drive/')
+file = "/content/drive/$path/data.csv"
+df = pd.read_csv(file)
 ```
 
->📋  Describe how to set up the environment, e.g. pip/conda/docker commands, download datasets, etc...
+To upload dataset from local:
+```
+from google.colab import files
+uploaded = files.upload()
+```
+>📋  Run this cell and click 'Choose Files'
 
 ## Training
 
