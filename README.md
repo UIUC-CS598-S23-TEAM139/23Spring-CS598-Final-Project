@@ -21,7 +21,7 @@ To upload dataset from local:
 from google.colab import files
 uploaded = files.upload()
 ```
->📋  Run this cell and click 'Choose Files'
+>📋  Click on "Open in Colab". Run this cell and click 'Choose Files'
 
 ## Training
 
