@@ -23,6 +23,18 @@ uploaded = files.upload()
 ```
 >📋  Click on "Open in Colab". Run this cell and click 'Choose Files'
 
+## Environment
+```
+Python 3.10.11
+
+keras==2.12.0
+numpy==1.22.4
+pandas==1.5.3
+pandas-datareader==0.10.0
+pandas-gbq==0.17.9
+sklearn-pandas==2.2.0
+```
+
 ## Training
 
 
