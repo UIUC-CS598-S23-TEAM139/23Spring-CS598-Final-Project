@@ -43,11 +43,11 @@ pip install keras
 
 ## Training
 
-Run the whole notebook.
+See in notebook.
 
 ## Evaluation
 
-Run the whole notebook.
+See in notebook.
 
 ## Results
 
