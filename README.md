@@ -35,32 +35,53 @@ pandas-gbq==0.17.9
 sklearn-pandas==2.2.0
 ```
 
+```
+pip install numpy
+pip install pandas
+pip install keras
+```
+
 ## Training
 
+Run the whole notebook.
 
 ## Evaluation
 
-
-
->📋  Describe how to evaluate the trained models on benchmarks reported in the paper, give commands that produce the results (section below).
-
-## Pre-trained Models
-
-
+Run the whole notebook.
 
 ## Results
 
 Our model achieves the following performance on :
 
-### Single-label Classification on deep learning
+### Multi-label Classification (machine learning)
 
-| Model name         | Top 1 Accuracy  | Top 5 Accuracy |
-| ------------------ |---------------- | -------------- |
-| My awesome model   |     85%         |      95%       |
+| Model name         | Imbalanced Acc. | Balanced Acc. |
+| ------------------ | --------------- | ------------- |
+| MLP                |     40.21%      |     35.05%    |
+| SVM                |     21.65%      |     28.87%    |
+| RF                 |     30.93%      |     40.21%    |
+| DT                 |     39.18%      |     37.11%    |
 
->📋  Include a table of results from your paper, and link back to the leaderboard for clarity and context. If your main result is a figure, include that figure and link to the command or notebook to reproduce it. 
+### Classification on imbalanced data (deep learning)
 
+|                | Train Acc.      | Validation Acc.|
+| -------------- | --------------- | -------------- |
+| Multi label    |     0.6082      |     0.6837     |
+| Insomnia       |     0.6999      |     0.7583     |
+| Schizophrenia  |     0.8500      |     0.8917     |
+| VD             |     0.6999      |     0.7083     |
+| MBD            |     0.6700      |     0.6833     |
+| Bipolar        |     0.7200      |     0.7583     |
 
-## Contributing
+### Classification on balanced data (deep learning)
 
->📋  Pick a licence and describe how to contribute to your code repository. 
+|                | Train Acc.      | Validation Acc.|
+| -------------- | --------------- | -------------- |
+| Multi label    |     0.3992      |     0.4192     |
+| Insomnia       |     0.7732      |     0.7891     |
+| Schizophrenia  |     0.9072      |     0.9314     |
+| VD             |     0.3814      |     0.5000     |
+| MBD            |     0.5464      |     0.5878     |
+| Bipolar        |     0.7526      |     0.7338     |
+
+>📋  Accuracy of Multi-layered Perceptron (MLP), Support Vector Machine (SVM), Random Forest (RF), Decision Tree (DT), and Deep Learning Neural Network.
